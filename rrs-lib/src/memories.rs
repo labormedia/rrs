@@ -4,11 +4,20 @@
 
 //! Various [Memory] implementations useful for an ISS and utility functions
 
+extern crate alloc;
+
 use super::{MemAccessSize, Memory};
+#[cfg(feature="template")]
 use std::io;
+#[cfg(feature="template")]
 use std::io::Read;
+use alloc::{
+    boxed::Box,
+    vec::Vec
+};
 
 /// Read bytes from an [std::io::Read] into a [Memory] starting at the given address
+#[cfg(feature="template")]
 pub fn read_to_memory(
     reader: impl Read,
     memory: &mut impl Memory,

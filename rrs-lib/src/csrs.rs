@@ -4,7 +4,7 @@
 
 use super::CSR;
 use num_enum::{IntoPrimitive, TryFromPrimitive};
-use std::convert::TryFrom;
+use core::convert::TryFrom;
 
 // TODO: May be useful to have generic functionality to take a u32 and construct a CSR from it. Can
 // manually create CSR then use write to do this, can we do something more generic (e.g. that uses

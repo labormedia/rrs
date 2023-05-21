@@ -22,7 +22,10 @@ use super::csrs::CSRAddr;
 use super::instruction_formats;
 use super::InstructionProcessor;
 use paste::paste;
-use std::convert::TryFrom;
+use core::convert::TryFrom;
+use alloc::{
+    string::String,
+};
 
 pub struct InstructionStringOutputter {
     /// PC of the instruction being output. Used to generate disassembly of instructions with PC
