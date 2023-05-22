@@ -17,7 +17,7 @@ use alloc::{
 };
 
 /// Read bytes from an [std::io::Read] into a [Memory] starting at the given address
-#[cfg(feature="template")]
+#[cfg(feature="std")]
 pub fn read_to_memory(
     reader: impl Read,
     memory: &mut impl Memory,
