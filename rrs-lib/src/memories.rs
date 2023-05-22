@@ -7,9 +7,9 @@
 extern crate alloc;
 
 use super::{MemAccessSize, Memory};
-#[cfg(feature="template")]
+#[cfg(feature="std")]
 use std::io;
-#[cfg(feature="template")]
+#[cfg(feature="std")]
 use std::io::Read;
 use alloc::{
     boxed::Box,

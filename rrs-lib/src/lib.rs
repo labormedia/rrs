@@ -6,7 +6,7 @@
 //!
 //! Containts the building blocks for a RISC-V ISS. The seperate rrs-cli uses rrs-lib to implement
 //! a CLI driven ISS.
-#![cfg_attr(not(feature = "template"), no_std)]
+#![cfg_attr(not(feature = "std"), no_std)]
 
 #[macro_use]
 extern crate alloc;
