@@ -18,5 +18,5 @@ downcast-rs = { version="1.2.0", default-features=false }
 num_enum = { version="0.5.3", default-features=false }
 
 [features]
-default = ["template"]
-template = []
+default = []
+std = []
